@@ -1,12 +1,14 @@
 # World Time Clock
 
-This is a simple World Time Clock application built with React.js that displays the current time in multiple time zones using the TimeZoneDB API.
+This is a World Time Clock application built with React.js that displays the current time in multiple time zones using the TimeZoneDB API.
 
 ## Features
 
 - Displays current time for various time zones.
 - Shows time zone abbreviation and GMT offset.
 - Fetches real-time data from TimeZoneDB.
+- Toggle button to show/hide time zones.
+- Responsive design using Tailwind CSS.
 
 ## Setup
 
@@ -14,4 +16,3 @@ This is a simple World Time Clock application built with React.js that displays 
    ```bash
    git clone https://github.com/your-username/world-time-clock.git
    cd world-time-clock
-

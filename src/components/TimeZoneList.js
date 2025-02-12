@@ -35,7 +35,7 @@ const TimeZoneList = () => {
   }, [timeZones]);
 
   return (
-    <div className="time-zone-list">
+    <div className="time-zone-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {timeZones.map((zone) => (
         <TimeZoneCard
           key={zone.zoneName}
@@ -50,4 +50,3 @@ const TimeZoneList = () => {
 };
 
 export default TimeZoneList;
-

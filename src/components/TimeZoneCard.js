@@ -7,14 +7,13 @@ const TimeZoneCard = ({ timeZone, datetime, abbreviation, gmtOffset }) => {
   };
 
   return (
-    <div className="time-zone-card">
-      <h3>{timeZone}</h3>
-      <p>{formatDateTime(datetime)}</p>
-      <p>Time Zone: {abbreviation}</p>
-      <p>GMT Offset: {gmtOffset}</p>
+    <div className="time-zone-card bg-white p-6 m-4 text-center">
+      <h3 className="text-xl font-semibold mb-2">{timeZone}</h3>
+      <p className="text-gray-700 text-lg mb-1">{formatDateTime(datetime)}</p>
+      <p className="text-gray-500">Time Zone: {abbreviation}</p>
+      <p className="text-gray-500">GMT Offset: {gmtOffset}</p>
     </div>
   );
 };
 
 export default TimeZoneCard;
-

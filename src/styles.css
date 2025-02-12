@@ -1,41 +1,18 @@
+/* Add any custom styles here */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-  }
-  
-  .app {
-    text-align: center;
-  }
-  
-  .time-zone-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .time-zone-card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 16px;
-    width: 200px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
-  
-  .time-zone-card h3 {
-    margin: 0 0 8px;
-    font-size: 1.2em;
-  }
-  
-  .time-zone-card p {
-    margin: 4px 0;
-    font-size: 1em;
-  }
-  
+  font-family: 'Arial', sans-serif;
+}
+
+.app {
+  text-align: center;
+}
+
+.time-zone-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.time-zone-card:hover {
+  transform: scale(1.05);
+}

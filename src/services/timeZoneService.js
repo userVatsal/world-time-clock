@@ -28,10 +28,13 @@ export const fetchTimeForZone = async (zone) => {
         zone,
       },
     });
-    return response.data;
+    return {
+      formatted: response.data.formatted,
+      abbreviation: response.data.abbreviation,
+      gmtOffset: response.data.gmtOffset,
+    };
   } catch (error) {
     console.error('Error fetching time for zone:', error);
     return null;
   }
 };
-
